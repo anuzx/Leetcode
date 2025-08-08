@@ -1,0 +1,20 @@
+we want to return idx and we have nums in the array so to link them we will use hashMap 
+
+here key = array nums ( as they should be unique to get a unique solun)
+and value will be the idx 
+
+we will use one pointer and find the compliment of that num ( compli = target - nums[i])
+and store that num in key and its idx in value if its compliment does not exist in the hashmap 
+
+how to check ?
+
+hm.conatainskey(compliment) 
+if this returns true then :
+hm.get(compliment) -> gives value of the given key -> return new int[]{ i , hm.get(compliment)}
+
+else hm.put(nums[i] , i)
+
+if all of this does not happen then this means we dont have an ans therefore return null ;
+
+
+
