@@ -4,12 +4,14 @@ class Solution {
         Map<Integer , Integer> var = new HashMap<>();
         for (int i =0 ; i<nums.length ; i++){
 
-            Integer varIdx = var.get(nums[i]);
-            if (varIdx != null){
+           int comp = target - nums[i];
 
-                return new int[]{i , varIdx};
-            } var.put(target - nums[i] , i );
-        }return nums ;
-        
-    }
-}
+if(var.containsKey(comp)){
+
+return new int []{i , var.get(comp)};}
+else {
+
+var.put(nums[i] , i);} }
+
+return null; } } 
+
