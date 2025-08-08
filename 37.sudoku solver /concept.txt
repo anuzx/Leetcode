@@ -1,0 +1,4 @@
+board[row][col] = (char) (i + '0'); 
+
+we did typecasting here to convert int to char , using ASCII values 0 has a ASCII value of 48 now if we add a num to it 
+lets say 5 + '0' -< 5+48 -> 53 which when converted in char means '5' 
