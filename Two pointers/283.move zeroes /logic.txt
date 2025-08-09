@@ -1,0 +1,13 @@
+basic approach will be to create an array with all element = 0 and then iterate through the original array and copy all non zero elements to
+temp array and then copy the temp array to original array, but its space complexity will be O(n)
+
+so we should only focus on shifting non zero elements to left 
+
+now two pointers approach :
+
+right pointer will scan the non zero ele in the array 
+left pointer tracks where the non zero ele should be placed 
+
+when the right pointer finds a non zero ele , we will swap it with the left pointer ele
+
+
