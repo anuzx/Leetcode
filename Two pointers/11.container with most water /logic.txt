@@ -1,0 +1,4 @@
+Math.min ( a,b ) and Math.max(a,b) is used to find min and max of from a and b 
+
+move the pointer at shorter height inside , why ? because 
+moving either of the pointer will shorten the width but the shorter height one will limit the container height
