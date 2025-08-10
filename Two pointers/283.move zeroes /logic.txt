@@ -10,4 +10,5 @@ left pointer tracks where the non zero ele should be placed
 
 when the right pointer finds a non zero ele , we will swap it with the left pointer ele
 
-
+Here time complexity = o(n)
+space complecity = o(1)
