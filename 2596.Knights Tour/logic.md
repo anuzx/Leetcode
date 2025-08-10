@@ -4,3 +4,7 @@
 <br>
 <img width="360" height="551" alt="image" src="https://github.com/user-attachments/assets/9d224443-52fc-4958-b787-aa10206ca3a6" />
 
+<br>
+
+<h4>we will first analyse all possible moves for our knight and then choose the expected one (eg: after 0 we will go to 1)</h4>
+<br>
