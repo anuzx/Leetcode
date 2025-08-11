@@ -1,0 +1,6 @@
+to determine water stored at position i we will use 
+
+min( h[max_L] , h[max_R]) - h[i]
+
+we will move the smaller valued pointer inside just like the container problem 
+
