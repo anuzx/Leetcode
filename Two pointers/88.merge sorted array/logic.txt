@@ -1,0 +1,9 @@
+nums1 will have 0 0 0 in place on muns2 elements initially , so we will put larger element from either of two in the place of zeroes
+and smaller elements in the starting
+
+eg : Input: nums1 = [1,2,3,0,0,0], m = 3, nums2 = [2,5,6], n = 3
+Output: [1,2,2,3,5,6]
+
+lets take a pointer i at last non zero element of nums1 and j at last non zero element of nums2 and a pointer K initially located at the last zero 
+
+now if which so ever is greater we will put it at kth position
