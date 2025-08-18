@@ -1,0 +1,16 @@
+we will here use a dynamic sliding window to track unique characters 
+
+expands if all characters are unique and shriks if dublicate char is found 
+
+and hashset will be used to check dublicate characters 
+
+how this works ?
+
+initialise two pointers left and right to represent boundaries of current substring , both at idx 0 
+use hashset to store the characters in the current window so that we can check for dublicates 
+
+now if a char which is already present comes in the hashset shrink the window by moving the left pointer inside 
+remove the characters from the hashset until dublicate is removed 
+
+after each adjustment calc the length of substring and update it in max_length if required 
+
