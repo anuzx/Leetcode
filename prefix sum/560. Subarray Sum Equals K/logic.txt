@@ -1,0 +1,12 @@
+if the difference between two prefix sums = k we have found a subarray that sums to k
+
+if prefixSum[right] - prefixSum[left - 1] = k
+
+the subarray b/w indices left and right will have sum of k
+
+for each right idx there could be multiple left idx if the array contains -ve nums
+therefore use :
+
+prefixSum[right] - k = prefixSum[left - 1]
+
+to store the frequency of each prefixsum we will use hash map
