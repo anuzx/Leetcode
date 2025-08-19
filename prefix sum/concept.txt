@@ -1,1 +1,29 @@
+a pattern used for array related problems which can reduce time complexity from O(n^2) to O(n)
 
+prefix sum for an array is the cummulative sum of elements from start of the array to a given idx
+
+how to implement it ?
+
+initialization : int [] prefixSum = new int[arr.length] //initialize it of the same length as input array
+
+//assign the 1st element of prefixsum as 1st element of arr
+
+prefixSum[0] = arr[0]
+
+interate over the array using for loop and update the value of prefixSum by using 
+
+prefixSum [i] = prefixSum[i-1] + arr [i]
+
+you dont even need a new array you can modify the original array itself :
+
+arr[i] = arr[i-1] + arr[i] ;
+
+common senarios to use this pattern :
+
+1) Range sum queries :
+
+where we need to compute sum of elemets b/w two indices frequently 
+
+2) subarray sum problems :
+
+where we need to find the subarray whose elements add up to a specific value 
