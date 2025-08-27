@@ -34,4 +34,4 @@ If it returns -1, that means it’s not a vowel, so you move start forward until
 and here we are not using <= as it will not give us the desired result because it will swap one more time due to the fact that even tho 
 <br>outer while loop says start <= end but it will only check this for initial condition of start and end , and not after they have 
 <br>advanced to find the vowel so in case start becomes > end they will still swap </h3>
-due to the fact that the outer while loop will only check the initial value of start and end , and not the values after the pointers have moved to find the vowels <h2>
+
