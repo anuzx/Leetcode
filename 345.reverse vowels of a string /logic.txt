@@ -1,4 +1,8 @@
-since we have to check char by char we will convert the string into char by using char [] word = s.toCharArray
+since we have to check char by char we will convert the string into array of char by using char [] word = s.toCharArray
+so that now we can point to each char by their idx
+
+word[start] means “the character at position start in the array.”
+word[end] means “the character at position end in the array.”
 
 now we will take two pointers at first and last idx 
 
