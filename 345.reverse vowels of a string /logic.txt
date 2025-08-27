@@ -15,7 +15,10 @@ while (start < end && vowels.indexOf(word[start]) == -1) {
 
 this means we will keep moving the start pointer until it is less than end pointer value and also is not a vowel 
 
-indexOf in Java is a method that searches a string for a character (or another string) and tells you the position (index) where it first appears. 
-If the thing you’re searching for isn’t found, it returns -1.
+Now, indexOf is a method that belongs to the String class in Java. It checks whether a given character (or substring) exists inside that string, and if so, it returns the index (position) where it first appears. If it doesn’t find it, it returns -1.
+
+vowels.indexOf(word[start]) looks for that character inside "aeiouAEIOU".
+
+If it returns -1, that means it’s not a vowel, so you move start forward until you actually land on a vowel.
 
 and here we are not using <= as it will not give us the desired result because it will swap one more time 
