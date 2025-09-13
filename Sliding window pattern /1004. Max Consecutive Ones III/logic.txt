@@ -1,0 +1,18 @@
+nums = [1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0]
+
+k = 2 → Meaning: We are allowed to flip at most 2 zeros to ones.
+
+Goal:
+Find the length of the longest contiguous subarray of 1s, where we can flip at most k zeros into ones.
+
+Variables:
+l = 0: Left pointer of the window
+r = 0: Right pointer of the window
+zeroCount = 0: Number of zeros in the current window
+ans = 0: Max length of valid window seen so far
+
+Understanding r - l + 1:
+l: Left pointer of the window (starting index of current window).
+r: Right pointer of the window (ending index of current window).
+The length of the current window (i.e., the number of elements between l and r, inclusive) is:
+Window Length=r−l+1
