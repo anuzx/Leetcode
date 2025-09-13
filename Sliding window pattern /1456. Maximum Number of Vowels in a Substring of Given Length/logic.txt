@@ -1,0 +1,34 @@
+we will make a boolean fxn to know if the given char is a vowel or not 
+
+taking example => abciiidef
+
+Step 1: Initialization
+
+We define:
+
+currVowels: The count of vowels in the current window (of length k).
+
+maxVowels: The maximum vowels seen so far in any window.
+
+Step 2: First Window (Precompute first k characters)
+
+We loop over the first k characters (i = 0 to k-1):
+
+So after the first window,
+currVowels = 1 and maxVowels = 1.
+
+Step 3: Slide the Window
+
+We now slide the window by one character at a time (from i = k to s.length()-1), updating currVowels and maxVowels.
+
+At each step:
+
+Add the vowel status of the new character s.charAt(i)
+
+Remove the vowel status of the character s.charAt(i - k)
+
+Why do we subtract isVowel(s.charAt(i - k))?
+
+Because as the window slides forward, the first character of the previous window "goes out", so if it was a vowel, we need to decrement currVowels.
+
+This way, we avoid re-counting the entire substring each time (O(n) instead of O(n*k)).
