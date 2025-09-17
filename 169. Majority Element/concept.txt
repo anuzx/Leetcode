@@ -1,0 +1,9 @@
+one way is to solve using hashmap but that will increase the space complexity.
+
+so we will use moorse voting algo 
+
+steps:
+
+i) find the candidate element to be the majority element 
+ii) to conform whether it is a majority elements
+
