@@ -1,0 +1,4 @@
+we are sorting array so that we need to check prefix of 1st and last string as other strings in middle will definately have that prefix if in case 1st and last string have that prefix 
+
+
+therefore we will take str1 =str[0]; and str2 = str[str.length-1] 
